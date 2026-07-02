@@ -1,12 +1,24 @@
 export const personalInfo = {
   name: "Ronald Mendoza",
-  role: "Ingeniero de Sistemas | Full Stack Developer",
+
+  greeting: "Hola, soy",
+
+  status: "Disponible para nuevas oportunidades",
+
+  title: "Ingeniero de Sistemas",
+
+  subtitle: "Full Stack Developer",
+
   location: "Perú",
 
+  tittletecnology: "Tecnologías principales:",
+
   description:
-    "Soy estudiante de Ingeniería de Sistemas y desarrollador Full Stack. Me apasiona crear aplicaciones modernas, escalables y con una excelente experiencia de usuario. Siempre estoy aprendiendo nuevas tecnologías y buscando mejorar como profesional.",
+    "...",
 
   email: "",
+
   github: "",
+
   linkedin: "",
 };

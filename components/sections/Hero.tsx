@@ -51,12 +51,12 @@ export default function Hero() {
                         mb-6
                     "
                 >
-                    👋 Disponible para nuevas oportunidades
+                    👋 {personalInfo.status}
                 </span>
                 
 
                 <p className="text-gray-400 text-xl">
-                    Hola, soy
+                    {personalInfo.greeting}
                 </p>
 
                 
@@ -65,16 +65,20 @@ export default function Hero() {
                 </h1>
 
                 <h2 className="text-4xl text-blue-400 mt-3">
-                    {personalInfo.role}
+                    {personalInfo.title}
                 </h2>
+
+                <p className="text-4xl text-blue-400 mt-3">
+                    {personalInfo.subtitle}
+                </p>
 
                 <p
                     className="
-                        text-gray-400
-                        mt-8
-                        max-w-xl
-                        leading-8
-                    "
+                  text-gray-400
+                    text-lg
+                    leading-9
+                    max-w-xl
+                "
                 >
                     Desarrollo aplicaciones web modernas,
                     escalables y enfocadas en ofrecer una
@@ -83,7 +87,9 @@ export default function Hero() {
                 
                 <div className="flex gap-4 mt-10">
 
-                    <Button text="Ver proyectos" />
+                    <a href="#projects">
+                        <Button text="Ver proyectos" />
+                    </a>
 
                     <Button
                         text="Descargar CV"
@@ -99,7 +105,7 @@ export default function Hero() {
                         mb-4
                     "
                 >
-                    Tecnologías principales:
+                    {personalInfo.tittletecnology}
                 </p>
                 <div className="flex flex-wrap gap-3 mt-10">
                     
@@ -136,7 +142,7 @@ export default function Hero() {
                     height={350}
                     className="
                         rounded-full
-                        border-4
+                        border-[5px]
                         border-blue-500
                         shadow-[0_0_60px_rgba(59,130,246,0.45)]
                         object-cover
