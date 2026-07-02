@@ -1,7 +1,7 @@
 import Button from "@/components/ui/Button";
 import { personalInfo } from "@/data/portfolio";
 import Image from "next/image";
-import { skills } from "@/data/skills";
+import { skillCategories } from "@/data/skills";
 import Background from "@/components/common/Background";
 
 export default function Hero() {
@@ -20,8 +20,8 @@ export default function Hero() {
             "
             
         >
-            <Background />
             
+            <Background />
             <div
                 className="
                     absolute
@@ -35,13 +35,31 @@ export default function Hero() {
                     blur-3xl
                 "
             />
-
+            
             <div className="relative z-10">
+                <span
+                    className="
+                        inline-block
+                        px-4
+                        py-2
+                        rounded-full
+                        bg-blue-500/10
+                        border
+                        border-blue-500/20
+                        text-blue-400
+                        text-sm
+                        mb-6
+                    "
+                >
+                    👋 Disponible para nuevas oportunidades
+                </span>
+                
 
                 <p className="text-gray-400 text-xl">
                     Hola, soy
                 </p>
 
+                
                 <h1 className="text-7xl font-bold text-white mt-3">
                     {personalInfo.name}
                 </h1>
@@ -62,19 +80,31 @@ export default function Hero() {
                     escalables y enfocadas en ofrecer una
                     excelente experiencia de usuario.
                 </p>
-
+                
                 <div className="flex gap-4 mt-10">
 
                     <Button text="Ver proyectos" />
 
-                    <Button text="Contáctame" />
+                    <Button
+                        text="Descargar CV"
+                        variant="secondary"
+                    />
 
                 </div>
-
+        
+                <p
+                    className="
+                        text-gray-500
+                        text-sm
+                        mb-4
+                    "
+                >
+                    Tecnologías principales:
+                </p>
                 <div className="flex flex-wrap gap-3 mt-10">
-
-                    {skills.slice(0, 5).map((skill) => (
-
+                    
+                    {skillCategories.flatMap((category) => category.skills).slice(0, 5).map((skill) => (
+                        
                         <span
                             key={skill}
                             className="

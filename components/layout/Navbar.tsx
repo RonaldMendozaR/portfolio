@@ -7,6 +7,10 @@ export default function Navbar() {
             href: "#about",
         },
         {
+            label: "Tecnologías",
+            href: "#skills",
+        },
+        {
             label: "Proyectos",
             href: "#projects",
         },
@@ -25,6 +29,7 @@ export default function Navbar() {
                 left-0
                 w-full
                 flex
+                z-50
                 justify-between
                 items-center
                 px-10
