@@ -2,6 +2,7 @@ import Button from "@/components/ui/Button";
 import { personalInfo } from "@/data/portfolio";
 import Image from "next/image";
 import { skills } from "@/data/skills";
+import Background from "@/components/common/Background";
 
 export default function Hero() {
     return (
@@ -19,6 +20,8 @@ export default function Hero() {
             "
             
         >
+            <Background />
+            
             <div
                 className="
                     absolute
