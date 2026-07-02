@@ -40,7 +40,7 @@ export default function Navbar() {
                 <li>Proyectos</li>
                 <li>Contacto</li>
             </ul>
-
+ 
         </nav>
 
     );
