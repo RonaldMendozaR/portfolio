@@ -1,4 +1,4 @@
-import { personalInfo } from "@/data/portfolio";
+import { heroData } from "@/data/hero";
 
 
 export default function About() {
@@ -25,7 +25,7 @@ export default function About() {
             leading-9
           "
         >
-          {personalInfo.aboutDescription}
+          {heroData.aboutDescription}
         </p>
         
         

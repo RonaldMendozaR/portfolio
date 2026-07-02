@@ -1,4 +1,4 @@
-export const personalInfo = {
+export const heroData = {
   name: "Ronald Mendoza",
 
   greeting: "Hola, soy",
@@ -11,7 +11,7 @@ export const personalInfo = {
 
   location: "Perú",
 
-  tittletecnology: "Tecnologías principales",
+  technologyTitle: "Tecnologías principales",
 
   heroDescription:
     "Desarrollo aplicaciones web modernas, escalables y enfocadas en ofrecer una excelente experiencia de usuario.",

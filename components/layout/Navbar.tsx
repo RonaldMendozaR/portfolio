@@ -1,4 +1,4 @@
-import { personalInfo } from "@/data/portfolio";
+import { heroData } from "@/data/hero";
 
 export default function Navbar() {
     const menuItems = [
@@ -46,7 +46,7 @@ export default function Navbar() {
                     text-white
                 "
             >
-                {personalInfo.name}
+                {heroData.name}
             </h1>
 
             <ul className="flex gap-8 text-gray-300">
