@@ -1,48 +1,81 @@
 import { skillCategories } from "@/data/skills";
-import SkillBadge from "../ui/SkillBadge";
 
 export default function Skills() {
-  return (
-    <section
-      id="skills"
-      className="min-h-screen px-24 py-24"
-    >
-        
-      <h2 className="text-5xl font-bold mb-4">
-        Tecnologías
-      </h2>
+    return (
+        <section
+            id="skills"
+            className="
+                min-h-screen
+                px-24
+                py-32
+            "
+        >
+            <div className="max-w-5xl mx-auto">
 
-      <div className="w-32 h-1 bg-blue-500 rounded-full mb-16"></div>
+                <h2 className="text-5xl font-bold text-white">
+                    Tecnologías
+                </h2>
 
-      <div className="space-y-12">
+                <div className="w-28 h-1 bg-blue-500 rounded-full mt-4 mb-12" />
 
-        {skillCategories.map((category) => (
+                <div className="space-y-12">
 
-          <div key={category.title}>
+                    {skillCategories.map((category) => (
 
-            <h3 className="text-2xl font-semibold mb-6 text-blue-400">
-              {category.title}
-            </h3>
+                        <div key={category.title}>
 
-            <div className="flex flex-wrap gap-4">
+                            <h3
+                                className="
+                                    text-2xl
+                                    font-semibold
+                                    text-blue-400
+                                    mb-6
+                                "
+                            >
+                                {category.title}
+                            </h3>
 
-              {category.skills.map((skill) => (
+                            <div
+                                className="
+                                    flex
+                                    flex-wrap
+                                    gap-4
+                                "
+                            >
 
-                <SkillBadge
-                  key={skill}
-                  name={skill}
-                />
+                                {category.skills.map((skill) => (
 
-              ))}
+                                    <span
+                                        key={skill}
+                                        className="
+                                            rounded-full
+                                            border
+                                            border-slate-700
+                                            bg-slate-900
+                                            px-5
+                                            py-3
+                                            text-gray-300
+                                            transition-all
+                                            duration-300
+                                            hover:-translate-y-1
+                                            hover:border-blue-500
+                                            hover:text-blue-400
+                                        "
+                                    >
+                                        {skill}
+                                    </span>
+
+                                ))}
+
+                            </div>
+
+                        </div>
+
+                    ))}
+
+                </div>
 
             </div>
-
-          </div>
-
-        ))}
-
-      </div>
-
-    </section>
-  );
+        </section>
+    );
 }

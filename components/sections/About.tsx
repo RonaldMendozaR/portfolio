@@ -1,37 +1,57 @@
-import { heroData } from "@/data/hero";
-
+import { aboutData, aboutHighlights } from "@/data/about";
+import HighlightCard from "@/components/ui/HighlightCard";
 
 export default function About() {
-  return (
-    <section
-      id="about"
-      className="min-h-screen flex py-32 justify-center px-24"
-    >
-
-        
-      <div className="max-w-4xl">
-
-        <h2 className="text-5xl font-bold mb-3"> 
-          Sobre mí
-          
-        </h2 >
-        <div className="w-28 h-1 bg-blue-500 rounded-full mb-8"></div>
-        
-
-        <p
-          className="
-            text-gray-400
-            text-lg
-            leading-9
-          "
+    return (
+        <section
+            id="about"
+            className="
+                min-h-screen
+                px-24
+                py-32
+            "
         >
-          {heroData.aboutDescription}
-        </p>
-        
-        
-      </div>
+            <div className="max-w-5xl mx-auto">
 
-      
-    </section>
-  );
+                <h2 className="text-5xl font-bold text-white">
+                    {aboutData.title}
+                </h2>
+
+                <div className="w-28 h-1 bg-blue-500 rounded-full mt-4 mb-10" />
+
+                <p
+                    className="
+                        max-w-3xl
+                        text-lg
+                        leading-9
+                        text-gray-400
+                    "
+                >
+                    {aboutData.description}
+                </p>
+
+                <div
+                    className="
+                        grid
+                        grid-cols-2
+                        gap-6
+                        mt-14
+                    "
+                >
+
+                    {aboutHighlights.map((item) => (
+
+                        <HighlightCard
+                            key={item.title}
+                            emoji={item.emoji}
+                            title={item.title}
+                        />
+
+                    ))}
+
+                </div>
+
+            </div>
+        </section>
+    );
 }
