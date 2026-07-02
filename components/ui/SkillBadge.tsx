@@ -14,7 +14,9 @@ export default function SkillBadge({ name }: SkillBadgeProps) {
         border-slate-700
         text-gray-300
         hover:border-blue-500
+        hover:-translate-y-1
         hover:text-blue-400
+        cursor-default
         transition-all
         duration-300
       "

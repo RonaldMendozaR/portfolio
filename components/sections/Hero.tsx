@@ -14,7 +14,7 @@ export default function Hero() {
                 min-h-screen
                 flex
                 items-center
-                justify-between
+                gap-50
                 px-24
                 overflow-hidden
             "
@@ -64,11 +64,11 @@ export default function Hero() {
                     {personalInfo.name}
                 </h1>
 
-                <h2 className="text-4xl text-blue-400 mt-3">
+                <h2 className="text-4xl font-semibold text-blue-400 mt-5">
                     {personalInfo.title}
                 </h2>
 
-                <p className="text-4xl text-blue-400 mt-3">
+                <p className="text-2xl text-gray-300 mt-2">
                     {personalInfo.subtitle}
                 </p>
 
@@ -80,12 +80,16 @@ export default function Hero() {
                     max-w-xl
                 "
                 >
-                    Desarrollo aplicaciones web modernas,
-                    escalables y enfocadas en ofrecer una
-                    excelente experiencia de usuario.
+                    {personalInfo.heroDescription}
                 </p>
                 
-                <div className="flex gap-4 mt-10">
+                <div className="
+              text-gray-400
+                text-lg
+                leading-9
+                max-w-xl
+                mb-10
+                ">
 
                     <a href="#projects">
                         <Button text="Ver proyectos" />
@@ -102,12 +106,12 @@ export default function Hero() {
                     className="
                         text-gray-500
                         text-sm
-                        mb-4
+                        mt-5
                     "
                 >
                     {personalInfo.tittletecnology}
                 </p>
-                <div className="flex flex-wrap gap-3 mt-10">
+                <div className="flex flex-wrap gap-3 mt-5">
                     
                     {skillCategories.flatMap((category) => category.skills).slice(0, 5).map((skill) => (
                         
@@ -117,9 +121,14 @@ export default function Hero() {
                                 px-4
                                 py-2
                                 rounded-full
-                                bg-slate-800
-                                text-blue-400
+                              bg-slate-900
+                                border
+                              border-slate-700
                                 text-sm
+                              hover:border-blue-500
+                              hover:text-blue-400
+                                transition-all
+                                duration-300
                             "
                         >
                             {skill}
@@ -138,14 +147,15 @@ export default function Hero() {
                 <Image
                     src="/images/profile.png"
                     alt="Foto de Ronald Mendoza"
-                    width={350}
-                    height={350}
+                    width={380} 
+                    height={380}
                     className="
                         rounded-full
                         border-[5px]
                         border-blue-500
                         shadow-[0_0_60px_rgba(59,130,246,0.45)]
                         object-cover
+                        
                     "
                 />
             </div>
