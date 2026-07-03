@@ -1,4 +1,4 @@
-import SkillBadge from "./SkillBadge";
+import TechnologyTag from "./TechnologyTag";
 
 type Technology = {
   name: string;
@@ -32,7 +32,6 @@ export default function ProjectCard({
         hover:border-blue-500
       "
     >
-      {/* Imagen temporal */}
       <div
         className="
           h-56
@@ -48,13 +47,7 @@ export default function ProjectCard({
 
       <div className="p-6">
 
-        <h3
-          className="
-            text-2xl
-            font-bold
-            text-white
-          "
-        >
+        <h3 className="text-2xl font-bold text-white">
           {title}
         </h3>
 
@@ -68,59 +61,17 @@ export default function ProjectCard({
           {description}
         </p>
 
-        <div
-          className="
-            mt-6
-            flex
-            flex-wrap
-            gap-3
-          "
-        >
+        <div className="flex flex-wrap gap-3 mt-6">
+
           {technologies.map((technology) => (
-            <SkillBadge
+
+            <TechnologyTag
               key={technology.name}
               name={technology.name}
             />
+
           ))}
-        </div>
 
-        <div
-          className="
-            mt-8
-            flex
-            gap-4
-          "
-        >
-          <button
-            className="
-              rounded-xl
-              bg-blue-500
-              px-5
-              py-3
-              font-semibold
-              text-white
-              transition
-              hover:bg-blue-600
-            "
-          >
-            GitHub
-          </button>
-
-          <button
-            className="
-              rounded-xl
-              border
-              border-blue-500
-              px-5
-              py-3
-              font-semibold
-              text-blue-400
-              transition
-              hover:bg-blue-500/10
-            "
-          >
-            Demo
-          </button>
         </div>
 
       </div>
