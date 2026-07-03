@@ -1,7 +1,19 @@
-export const heroData = {
-  name: "Ronald Mendoza",
+import {
+  FaReact,
+  FaJava,
+  FaGitAlt,
+} from "react-icons/fa";
 
+import {
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+} from "react-icons/si";
+
+export const heroData = {
   greeting: "Hola, soy",
+
+  name: "Ronald Mendoza",
 
   status: "Disponible para nuevas oportunidades",
 
@@ -9,15 +21,37 @@ export const heroData = {
 
   subtitle: "Full Stack Developer",
 
-  location: "Perú",
-
   technologyTitle: "Tecnologías principales",
 
   heroDescription:
     "Desarrollo aplicaciones web modernas, escalables y enfocadas en ofrecer una excelente experiencia de usuario.",
 
-  aboutDescription:
-    "Soy estudiante de Ingeniería de Sistemas y desarrollador Full Stack. Me apasiona crear aplicaciones modernas, mantener un código limpio y aprender constantemente nuevas tecnologías.",
+  featuredTechnologies: [
+    {
+      name: "React",
+      icon: FaReact,
+    },
+    {
+      name: "Next.js",
+      icon: SiNextdotjs,
+    },
+    {
+      name: "TypeScript",
+      icon: SiTypescript,
+    },
+    {
+      name: "Tailwind CSS",
+      icon: SiTailwindcss,
+    },
+    {
+      name: "Java",
+      icon: FaJava,
+    },
+    {
+      name: "Git",
+      icon: FaGitAlt,
+    },
+  ],
 
   email: "",
 

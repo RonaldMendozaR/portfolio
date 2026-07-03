@@ -1,4 +1,5 @@
 import { IconType } from "react-icons";
+import SkillBadge from "./SkillBadge";
 
 type Skill = {
   name: string;
@@ -24,8 +25,8 @@ export default function SkillCategoryCard({
         p-6
         transition-all
         duration-300
-        hover:-translate-y-2
         hover:border-blue-500
+        hover:-translate-y-2
       "
     >
       <h3
@@ -40,36 +41,13 @@ export default function SkillCategoryCard({
       </h3>
 
       <div className="flex flex-wrap gap-3">
-        {skills.map((skill) => {
-          const Icon = skill.icon;
-
-          return (
-            <div
-              key={skill.name}
-              className="
-                flex
-                items-center
-                gap-2
-                rounded-full
-                border
-                border-slate-700
-                bg-slate-800
-                px-4
-                py-2
-                text-sm
-                text-gray-300
-                transition-all
-                duration-300
-                hover:border-blue-500
-                hover:text-blue-400
-              "
-            >
-              <Icon size={18} />
-
-              <span>{skill.name}</span>
-            </div>
-          );
-        })}
+        {skills.map((skill) => (
+          <SkillBadge
+            key={skill.name}
+            name={skill.name}
+            icon={skill.icon}
+          />
+        ))}
       </div>
     </div>
   );

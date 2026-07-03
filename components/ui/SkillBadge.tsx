@@ -1,27 +1,38 @@
+import { IconType } from "react-icons";
+
 type SkillBadgeProps = {
   name: string;
+  icon: IconType;
 };
 
-export default function SkillBadge({ name }: SkillBadgeProps) {
+export default function SkillBadge({
+  name,
+  icon: Icon,
+}: SkillBadgeProps) {
   return (
     <span
       className="
+        flex
+        items-center
+        gap-2
         px-4
         py-2
         rounded-full
-        bg-slate-800
+        bg-slate-900
         border
         border-slate-700
         text-gray-300
         hover:border-blue-500
-        hover:-translate-y-1
         hover:text-blue-400
-        cursor-default
+        hover:-translate-y-1
         transition-all
         duration-300
+        cursor-default
       "
     >
-      {name}
+      <Icon size={18} />
+
+      <span>{name}</span>
     </span>
   );
 }
