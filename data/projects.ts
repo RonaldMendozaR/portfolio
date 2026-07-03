@@ -1,45 +1,40 @@
 export const projects = [
+  {
+    title: "Sistema de Gestión de Ahorros",
 
-    {
+    description:
+      "Aplicación desarrollada para administrar ingresos, gastos y metas financieras de forma sencilla e intuitiva.",
 
-        title:"Sistema de Gestión de Ahorros",
+    technologies: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "MySQL",
+    ],
 
-        description:
-        "Aplicación desarrollada para administrar ingresos, gastos y metas financieras.",
+    github: "#",
 
-        technologies:[
-            "React",
-            "Next.js",
-            "TypeScript",
-            "MySQL",
-        ],
+    demo: "#",
 
-        github:"#",
+    image: "/images/projects/savings.png",
+  },
 
-        demo:"#",
+  {
+    title: "Sistema de Ventas",
 
-        image:"/images/projects/savings.png",
+    description:
+      "Sistema web para gestionar ventas, clientes y reportes utilizando una arquitectura organizada.",
 
-    },
+    technologies: [
+      "Java",
+      "SQL Server",
+      "JavaScript",
+    ],
 
-    {
+    github: "#",
 
-        title:"Sistema de Ventas",
+    demo: "#",
 
-        description:
-        "Sistema web para gestionar ventas, clientes y reportes.",
-
-        technologies:[
-            "Java",
-            "SQL Server",
-        ],
-
-        github:"#",
-
-        demo:"#",
-
-        image:"/images/projects/sales.png",
-
-    }
-
+    image: "/images/projects/sales.png",
+  },
 ];
