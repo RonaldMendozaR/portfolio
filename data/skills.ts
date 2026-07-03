@@ -1,18 +1,100 @@
+import {
+  FaReact,
+  FaJava,
+  FaPhp,
+  FaGitAlt,
+  FaGithub,
+  FaDatabase,
+  FaCode,
+} from "react-icons/fa";
+
+import {
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+  SiNodedotjs,
+  SiMysql,
+  SiAndroidstudio,
+} from "react-icons/si";
+
 export const skillCategories = [
   {
     title: "Frontend",
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+
+    skills: [
+      {
+        name: "React",
+        icon: FaReact,
+      },
+      {
+        name: "Next.js",
+        icon: SiNextdotjs,
+      },
+      {
+        name: "TypeScript",
+        icon: SiTypescript,
+      },
+      {
+        name: "Tailwind CSS",
+        icon: SiTailwindcss,
+      },
+    ],
   },
+
   {
     title: "Backend",
-    skills: ["Java", "PHP", "C#", "Node.js"],
+
+    skills: [
+      {
+        name: "Java",
+        icon: FaJava,
+      },
+      {
+        name: "PHP",
+        icon: FaPhp,
+      },
+      {
+        name: "Node.js",
+        icon: SiNodedotjs,
+      },
+    ],
   },
+
   {
     title: "Base de Datos",
-    skills: ["SQL Server", "MySQL"],
+
+    skills: [
+      {
+        name: "SQL Server",
+        icon: FaDatabase,
+      },
+      {
+        name: "MySQL",
+        icon: SiMysql,
+      },
+    ],
   },
+
   {
     title: "Herramientas",
-    skills: ["Git", "GitHub", "VS Code", "Android Studio"],
+
+    skills: [
+      {
+        name: "Git",
+        icon: FaGitAlt,
+      },
+      {
+        name: "GitHub",
+        icon: FaGithub,
+      },
+      {
+        name: "VS Code",
+        icon: FaCode,
+      },
+      {
+        name: "Android Studio",
+        icon: SiAndroidstudio,
+      },
+    ],
   },
 ];

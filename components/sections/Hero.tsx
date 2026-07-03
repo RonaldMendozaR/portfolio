@@ -107,32 +107,37 @@ export default function Hero() {
                     </p>
 
                     <div className="flex flex-wrap gap-3">
+                        {featuredSkills.map((skill) => {
+                            const Icon = skill.icon;
 
-                        {featuredSkills.map((skill) => (
-
+                            return (
                             <span
-                                key={skill}
+                                key={skill.name}
                                 className="
-                                    rounded-full
-                                    border
-                                    border-slate-700
-                                    bg-slate-900
-                                    px-4
-                                    py-2
-                                    text-sm
-                                    text-gray-300
-                                    transition-all
-                                    duration-300
-                                    hover:-translate-y-1
-                                    hover:border-blue-500
-                                    hover:text-blue-400
+                                flex
+                                items-center
+                                gap-2
+                                rounded-full
+                                border
+                                border-slate-700
+                                bg-slate-900
+                                px-4
+                                py-2
+                                text-sm
+                                text-gray-300
+                                transition-all
+                                duration-300
+                                hover:-translate-y-1
+                                hover:border-blue-500
+                                hover:text-blue-400
                                 "
                             >
-                                {skill}
+                                <Icon size={16} />
+
+                                {skill.name}
                             </span>
-
-                        ))}
-
+                            );
+                        })}
                     </div>
 
                 </div>

@@ -23,7 +23,6 @@ export default function Skills() {
                         gap-8
                     "
                 >
-
                     {skillCategories.map((category) => (
 
                         <SkillCategoryCard
@@ -33,7 +32,6 @@ export default function Skills() {
                         />
 
                     ))}
-
                 </div>
 
             </div>
