@@ -1,4 +1,5 @@
 import { skillCategories } from "@/data/skills";
+import SectionTitle from "@/components/ui/SectionTitle";
 
 export default function Skills() {
     return (
@@ -12,11 +13,9 @@ export default function Skills() {
         >
             <div className="max-w-5xl mx-auto">
 
-                <h2 className="text-5xl font-bold text-white">
-                    Tecnologías
-                </h2>
-
-                <div className="w-28 h-1 bg-blue-500 rounded-full mt-4 mb-12" />
+                <SectionTitle
+    title="Tecnologías"
+/>
 
                 <div className="space-y-12">
 

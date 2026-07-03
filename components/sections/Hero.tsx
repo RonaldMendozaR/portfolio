@@ -56,7 +56,7 @@ export default function Hero() {
                         text-blue-400
                     "
                 >
-                    👋 {heroData.status}
+                     {heroData.status}
                 </span>
 
                 <p className="text-xl text-gray-400 mb-2">
