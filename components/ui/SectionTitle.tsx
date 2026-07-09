@@ -1,25 +1,25 @@
 type SectionTitleProps = {
-    title: string;
-    subtitle?: string;
+  title: string;
+  subtitle?: string;
 };
 
 export default function SectionTitle({
-    title,
-    subtitle,
+  title,
+  subtitle,
 }: SectionTitleProps) {
-    return (
-        <div className="mb-14">
-            <h2 className="text-5xl font-bold">
-                {title}
-            </h2>
+  return (
+    <div className="mb-16">
+      <h2 className="text-5xl font-bold text-white">
+        {title}
+      </h2>
 
-            <div className="w-32 h-1 bg-blue-500 rounded-full mt-4 mb-6"></div>
+      <div className="mt-4 mb-6 h-1 w-32 rounded-full bg-blue-500"></div>
 
-            {subtitle && (
-                <p className="text-gray-400 max-w-2xl">
-                    {subtitle}
-                </p>
-            )}
-        </div>
-    );
+      {subtitle && (
+        <p className="max-w-2xl text-lg text-gray-400">
+          {subtitle}
+        </p>
+      )}
+    </div>
+  );
 }

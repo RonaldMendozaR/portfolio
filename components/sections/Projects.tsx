@@ -1,5 +1,5 @@
-import SectionTitle from "@/components/ui/SectionTitle";
 import ProjectCard from "@/components/ui/ProjectCard";
+import SectionTitle from "@/components/ui/SectionTitle";
 
 import { projects } from "@/data/projects";
 
@@ -13,10 +13,9 @@ export default function Projects() {
       "
     >
       <div className="mx-auto max-w-7xl">
-
         <SectionTitle
           title="Proyectos"
-          subtitle="Algunos de los proyectos en los que he trabajado."
+          subtitle="Algunos proyectos personales y académicos que reflejan mi experiencia como desarrollador."
         />
 
         <div
@@ -39,7 +38,6 @@ export default function Projects() {
             />
           ))}
         </div>
-
       </div>
     </section>
   );
