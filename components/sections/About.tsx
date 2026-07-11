@@ -1,17 +1,11 @@
 import HighlightCard from "@/components/ui/HighlightCard";
 import { aboutData, aboutHighlights } from "@/data/about";
 import SectionTitle from "@/components/ui/SectionTitle";
+import SectionContainer from "../layout/SectionContainer";
 
 export default function About() {
   return (
-    <section
-      id="about"
-      className="
-        min-h-screen
-        px-24
-        py-32
-      "
-    >
+    <SectionContainer id="about">
       <div className="max-w-5xl mx-auto">
 
         <SectionTitle
@@ -47,6 +41,6 @@ export default function About() {
         </div>
 
       </div>
-    </section>
+    </SectionContainer>
   );
 }

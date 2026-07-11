@@ -1,17 +1,11 @@
 import SectionTitle from "@/components/ui/SectionTitle";
 import SkillCategoryCard from "@/components/ui/SkillCategoryCard";
 import { skillCategories } from "@/data/skills";
+import SectionContainer from "../layout/SectionContainer";
 
 export default function Skills() {
     return (
-        <section
-            id="skills"
-            className="
-                min-h-screen
-                px-24
-                py-32
-            "
-        >
+        <SectionContainer id="skills">
             <div className="max-w-6xl mx-auto">
 
                 <SectionTitle title="Tecnologías" />
@@ -35,6 +29,6 @@ export default function Skills() {
                 </div>
 
             </div>
-        </section>
+        </SectionContainer>
     );
 }

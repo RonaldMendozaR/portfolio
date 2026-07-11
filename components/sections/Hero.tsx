@@ -147,7 +147,7 @@ export default function Hero() {
         "
       >
         <Image
-          src="/images/profile.png"
+          src="/images/profile/profile.png"
           alt="Foto de Ronald Mendoza"
           width={360}
           height={360}

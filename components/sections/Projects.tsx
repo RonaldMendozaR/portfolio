@@ -2,16 +2,11 @@ import ProjectCard from "@/components/ui/ProjectCard";
 import SectionTitle from "@/components/ui/SectionTitle";
 
 import { projects } from "@/data/projects";
+import SectionContainer from "../layout/SectionContainer";
 
 export default function Projects() {
   return (
-    <section
-      id="projects"
-      className="
-        px-24
-        py-32
-      "
-    >
+    <SectionContainer id="projects">
       <div className="mx-auto max-w-7xl">
         <SectionTitle
           title="Proyectos"
@@ -39,6 +34,6 @@ export default function Projects() {
           ))}
         </div>
       </div>
-    </section>
+    </SectionContainer>
   );
 }
