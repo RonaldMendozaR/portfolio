@@ -1,37 +1,32 @@
+import SectionLayout from "@/components/layout/SectionLayout";
 import HighlightCard from "@/components/ui/HighlightCard";
-import { aboutData, aboutHighlights } from "@/data/about";
-import SectionTitle from "@/components/ui/SectionTitle";
-import SectionContainer from "../layout/SectionContainer";
+import { aboutData } from "@/data/about";
 
 export default function About() {
   return (
-    <SectionContainer id="about">
-      <div className="max-w-5xl mx-auto">
+    <SectionLayout
+      id="about"
+      title={aboutData.title}
+      subtitle={aboutData.subtitle}
+    >
+      <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
 
-        <SectionTitle
-            title={aboutData.title}
-        />
+        {/* Descripción */}
+        <div>
+          <p
+            className="
+              text-lg
+              leading-9
+              text-gray-400
+            "
+          >
+            {aboutData.description}
+          </p>
+        </div>
 
-        <p
-          className="
-            max-w-3xl
-            text-lg
-            leading-9
-            text-gray-400
-          "
-        >
-          {aboutData.description}
-        </p>
-
-        <div
-          className="
-            grid
-            grid-cols-2
-            gap-6
-            mt-14
-          "
-        >
-          {aboutHighlights.map((item) => (
+        {/* Highlights */}
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          {aboutData.highlights.map((item) => (
             <HighlightCard
               key={item.title}
               title={item.title}
@@ -41,6 +36,6 @@ export default function About() {
         </div>
 
       </div>
-    </SectionContainer>
+    </SectionLayout>
   );
 }

@@ -1,32 +1,35 @@
 import {
   GraduationCap,
-  Laptop,
-  MapPinned,
+  MapPin,
+  Code2,
   Rocket,
 } from "lucide-react";
 
 export const aboutData = {
   title: "Sobre mí",
 
-  description:
-    "Soy estudiante de Ingeniería de Software y desarrollador Full Stack. Me apasiona crear aplicaciones modernas, escribir código limpio y aprender constantemente nuevas tecnologías para construir soluciones escalables y de calidad.",
-};
+  subtitle:
+    "Conoce un poco más sobre mi perfil y mi forma de trabajar.",
 
-export const aboutHighlights = [
-  {
-    title: "Ingeniería de Software",
-    icon: Laptop,
-  },
-  {
-    title: "Perú",
-    icon: MapPinned,
-  },
-  {
-    title: "Universidad Peruana de Ciencias Aplicadas",
-    icon: GraduationCap,
-  },
-  {
-    title: "Full Stack Developer",
-    icon: Rocket,
-  },
-];
+  description:
+    "Soy estudiante de Ingeniería de Sistemas y desarrollador Full Stack. Me apasiona crear aplicaciones modernas, mantener un código limpio y aprender constantemente nuevas tecnologías.",
+
+  highlights: [
+    {
+      title: "Ingeniería de Sistemas",
+      icon: GraduationCap,
+    },
+    {
+      title: "Perú",
+      icon: MapPin,
+    },
+    {
+      title: "Estudiante Universitario",
+      icon: Code2,
+    },
+    {
+      title: "Full Stack Developer",
+      icon: Rocket,
+    },
+  ],
+};
