@@ -1,30 +1,26 @@
 import {
-  FaReact,
-  FaJava,
-  FaPhp,
-  FaGitAlt,
-  FaGithub,
-  FaDatabase,
-  FaCode,
-} from "react-icons/fa";
-
-import {
+  SiReact,
   SiNextdotjs,
   SiTypescript,
   SiTailwindcss,
   SiNodedotjs,
+  SiPhp,
+  SiDotnet,
   SiMysql,
+  SiGit,
+  SiGithub,
   SiAndroidstudio,
 } from "react-icons/si";
+
+import { FaJava, FaMicrosoft } from "react-icons/fa";
 
 export const skillCategories = [
   {
     title: "Frontend",
-
     skills: [
       {
         name: "React",
-        icon: FaReact,
+        icon: SiReact,
       },
       {
         name: "Next.js",
@@ -43,7 +39,6 @@ export const skillCategories = [
 
   {
     title: "Backend",
-
     skills: [
       {
         name: "Java",
@@ -51,7 +46,11 @@ export const skillCategories = [
       },
       {
         name: "PHP",
-        icon: FaPhp,
+        icon: SiPhp,
+      },
+      {
+        name: "C# / .NET",
+        icon: FaMicrosoft,
       },
       {
         name: "Node.js",
@@ -62,11 +61,10 @@ export const skillCategories = [
 
   {
     title: "Base de Datos",
-
     skills: [
       {
         name: "SQL Server",
-        icon: FaDatabase,
+        icon: FaMicrosoft,
       },
       {
         name: "MySQL",
@@ -77,19 +75,18 @@ export const skillCategories = [
 
   {
     title: "Herramientas",
-
     skills: [
       {
         name: "Git",
-        icon: FaGitAlt,
+        icon: SiGit,
       },
       {
         name: "GitHub",
-        icon: FaGithub,
+        icon: SiGithub,
       },
       {
         name: "VS Code",
-        icon: FaCode,
+        icon: FaMicrosoft,
       },
       {
         name: "Android Studio",
