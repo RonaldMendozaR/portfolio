@@ -1,42 +1,32 @@
-import { Project } from "@/types/project";
 
-export const projects: Project[] = [
+export const projects = [
   {
-    title: "Sistema de Gestión de Ahorros",
-
+    title: "Sistema de Gestión Financiera",
     description:
-      "Aplicación desarrollada para administrar ingresos, gastos y metas financieras de forma sencilla e intuitiva.",
-
-    technologies: [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "MySQL",
-    ],
-
+      "Aplicación web para gestionar ingresos, gastos, categorías y presupuestos, con un dashboard orientado al control financiero personal.",
+    image: "/images/projects/ahorro.png",
+    technologies: ["Laravel", "PHP", "MySQL", "JavaScript"],
     github: "#",
-
     demo: "#",
-
-    image: "/images/projects/savings.png",
   },
 
   {
-    title: "Sistema de Ventas",
-
+    title: "Dashboard Restaurante",
     description:
-      "Sistema web para gestionar ventas, clientes y reportes utilizando una arquitectura organizada.",
-
-    technologies: [
-      "Java",
-      "SQL Server",
-      "JavaScript",
-    ],
-
+      "Sistema para registrar y consultar ingresos y egresos realizados mediante Yape, con historial, filtros, balance y reportes.",
+    image: "/images/projects/restaurante.png",
+    technologies: ["Next.js", "React", "TypeScript", "SQLite"],
     github: "#",
-
     demo: "#",
+  },
 
-    image: "/images/projects/sales.png",
+  {
+    title: "Portafolio Personal",
+    description:
+      "Portafolio profesional desarrollado para presentar mi perfil, habilidades, proyectos y experiencia como desarrollador.",
+    image: "/images/projects/portfolio.png",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    github: "#",
+    demo: "#",
   },
 ];
